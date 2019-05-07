@@ -1,0 +1,4 @@
+Vagrant.configure("2") do |config|
+  config.vm.synced_folder ".", "/usr/local/cfg/vagrant", disabled: true  # Disable default share
+  config.ssh.shell = "run script shell.py"  # Configuration for Vagrant to ssh into shell
+end
