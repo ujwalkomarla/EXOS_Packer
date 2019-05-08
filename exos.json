@@ -29,6 +29,7 @@
       "vi default.xsf<enter>i",
       "disable idletimeout<enter>",
       "configure vlan default delete ports all<enter>",
+      "unconfigure Mgmt ipaddress<enter>",
       "enable dhcp vlan Mgmt<enter>",
       "create account admin {{ user `ssh_vagrant_user` }} {{ user `ssh_vagrant_pass` }}<enter>",
       "enable ssh2<enter>",
