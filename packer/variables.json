@@ -1,0 +1,6 @@
+{
+  "iso_checksum_type": "sha256",
+  "iso_checksum_url": "https://raw.githubusercontent.com/extremenetworks/Virtual_EXOS/master/checksums/vm-30.2.1.8-sha256sum.txt",
+  "iso_url": "https://akamai-ep.extremenetworks.com/Extreme_P/github-en/Virtual_EXOS/vm-30.2.1.8.iso",
+  "exos_version": "30.2.1.8"
+}

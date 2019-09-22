@@ -1,0 +1,23 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Custom StackStorm Vagrantfile shipped with the box.
+# User's Vagrantfile will be merged with this config, giving priority to user's settings.
+#
+# For more info about the original Vagrantfile load-order-merge mechanism see:
+# - https://groups.google.com/forum/#!topic/packer-tool/Iu1jSRgbWOk
+# - https://www.vagrantup.com/docs/cli/package.html
+# - https://www.vagrantup.com/docs/vagrantfile/#load-order
+
+VAGRANTFILE_API_VERSION = '2'
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  # The most common configuration options are documented and commented below.
+  # For a complete reference, please see the online documentation at
+  # https://docs.vagrantup.com.
+
+  # Disable default synced folders
+  config.vm.synced_folder ".", "/vagrant", disabled: true
+
+  # Configuration for Vagrant to ssh into shell
+  config.ssh.shell = "run script shell.py"
+end

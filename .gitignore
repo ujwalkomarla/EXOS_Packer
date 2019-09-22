@@ -1,8 +1,11 @@
-# Cache objects
+# Ignore Cache objects
 packer_cache/
 
-# For built boxes
+# Ignore Vagrant VM info
+.vagrant
+
+# Ignore built vagrant boxes
 *.box
 
-# Ignore EXOS Images
+# Ignore EXOS i386 images
 *.iso
