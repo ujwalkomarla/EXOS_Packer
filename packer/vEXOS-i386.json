@@ -48,7 +48,7 @@
     "iso_checksum_type": "{{user `iso_checksum_type`}}",
     "iso_checksum_url": "{{user `iso_checksum_url`}}",
     "iso_url": "{{user `iso_url`}}",
-    "keep_registered": true,
+    "keep_registered": false,
     "output_directory" : "vEXOS-{{user `exos_version`}}",
     "ssh_password": "{{user `ssh_vagrant_pass`}}",
     "ssh_skip_nat_mapping": false,
@@ -64,8 +64,9 @@
     "vm_name": "vEXOS-{{user `exos_version`}}"
   }],
   "post-processors": [{
+    "compression_level": 9,
     "type": "vagrant",
-    "keep_input_artifact": true,
+    "keep_input_artifact": false,
     "output": "../builds/vEXOS-{{user `exos_version`}}-{{.Provider}}.box",
     "vagrantfile_template": "templates/_Vagrantfile"
   }]
